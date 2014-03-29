@@ -1,0 +1,11 @@
+.welcome {
+	background: url(http://placehold.it/1400x200) no-repeat center;
+	background-size: cover;
+	height: 200px;
+}
+
+#map {
+	height: 500px;
+	/*background: url(http://placehold.it/1400x500) center;
+	background-size: cover;*/
+}
