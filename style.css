@@ -3,40 +3,81 @@ body {
 }
 
 .main {
-	padding: 40px 0 100px 0;
 	font-size: 1.5em;
-	height: 600px;
 }
 
 .main h1 {
 	font-size: 2em;
+	padding-top: 40px;
 }
 
-.physician img {
-	position: relative;
+address {
+	padding: 0;
+	margin: 20px 0 0 0;
+}
+
+.tel {
+	margin-top: 20px;
+}
+
+.physician {
+	height: 400px;
 }
 
 #map, .asset {
-	width: 50%;
-	float: left;
 	height: 500px;
 }
 
 .asset {
 	background: url(assets/office.jpg) center center no-repeat;
+	position: relative;
 }
 
 .asset img {
 	display: none;
 }
 
-@media all and (max-width: 800px){
-	#map, .asset {
-		float: none;
-		width: 100%;
-	}
+.accent {
+	font-size: .75em;
+	font-family: georgia, serif;
+	font-style: italic;
+}
+.physician-main {
+	position: relative;
+	padding: 0;
+}
 
-	.container {
-		padding: 20px;
+.description {
+	position: absolute;
+	right: 20px;
+	top: 40px;
+	color: #444;
+	width: 40%;
+}
+
+.building {
+	position: absolute;
+	bottom: 0;
+	right: 20px;
+	padding: 20px;
+	color: white;
+	background: rgba(0, 0, 0, .3);
+	border-radius: 4px;
+	font-size: 1.2em;
+	width: 300px;
+}
+
+/* Full Screen | Desktop */
+@media all and (min-width: 751px){
+	#map, .asset {
+		width: 50%;
+		float: left;
+		height: 500px;
+	}
+}
+
+@media all and (min-width: 767px){
+	.physician {
+		height: 600px;
 	}
 }

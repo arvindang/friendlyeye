@@ -12,7 +12,7 @@
 <body>
 	<div class="container main">
 		<div class="row">
-			<div class="col-xs-6">
+			<div class="col-sm-6">
 				<h1>Friendly Eye Medical</h1>
 
 				<address>
@@ -21,21 +21,30 @@
 					La Palma CA 90623
 				</address>
 
-				<p>
-					Feel free to call <a href="tel:7145212290">714-521-2290</a>
-				</p>
+				<span class="accent">
+					<a href="#map">View map</a>
+				</span>
+
+				<p class="tel">Feel free to call <a href="tel:7145212290">714-521-2290</a></p>
+
 			</div>
 
-			<div class="col-xs-6">
+			<div class="col-sm-6 physician-main">
 				<img src="assets/physician.jpg" class="physician" height="800px" alt="Photo of Doctor Yadavinder Dang">
+				<aside class="accent description">
+					Dr. Dang has been practicting ophthalmology for the last 30 years, and has been specializing in both adult and child care.
+				</aside>
 			</div>
 		</div>
 	</div>
 
-	<section id="map"></section>
 	<section class="asset">
 		<img src="assets/office.jpg" alt="Photo of the four story office building">
+		<p class="accent building">
+			Friendly Eye Medical is located at the La Palma hospital, in the four story building. Suite 44 is located on the fourth floor.
+		</p>
 	</section>
+	<section id="map"></section>
 
 	<script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.js'></script>
 	<script src="underscore.js"></script>
