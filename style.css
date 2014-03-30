@@ -50,9 +50,12 @@ address {
 .description {
 	position: absolute;
 	right: 20px;
-	top: 40px;
+	bottom: 40px;
 	color: #444;
 	width: 40%;
+	background: rgba(255, 255, 255, .6);
+	padding: 20px;
+	border-radius: 4px;
 }
 
 .building {
