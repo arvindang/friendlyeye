@@ -1,11 +1,42 @@
-.welcome {
-	background: url(http://placehold.it/1400x200) no-repeat center;
-	background-size: cover;
-	height: 200px;
+body {
+	color: #444;
 }
 
-#map {
+.main {
+	padding: 40px 0 100px 0;
+	font-size: 1.5em;
+	height: 600px;
+}
+
+.main h1 {
+	font-size: 2em;
+}
+
+.physician img {
+	position: relative;
+}
+
+#map, .asset {
+	width: 50%;
+	float: left;
 	height: 500px;
-	/*background: url(http://placehold.it/1400x500) center;
-	background-size: cover;*/
+}
+
+.asset {
+	background: url(assets/office.jpg) center center no-repeat;
+}
+
+.asset img {
+	display: none;
+}
+
+@media all and (max-width: 800px){
+	#map, .asset {
+		float: none;
+		width: 100%;
+	}
+
+	.container {
+		padding: 20px;
+	}
 }
