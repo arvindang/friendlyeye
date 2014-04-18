@@ -1,0 +1,150 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,700,300);
+@import 'normalize';
+
+%reset {
+  margin: 0;
+}
+
+%group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+* {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #F0FFFF;
+  color: #0099CC;
+}
+
+header {
+  // background: url(http://cl.ly/image/1l3s0D3u2A41/download/6895047173_d7322ea7f0_o.jpg);
+  // background-size: cover;
+  padding: 40px;
+  @extend %group;
+
+  hgroup, img {
+    float: left;
+  }
+
+  hgroup {
+    margin-left: 80px;
+  }
+
+  img {
+    height: 240px;
+    width: auto;
+    position: relative;
+    top: -50px;
+    right: -40px;
+  }
+
+  h1, h2 {
+    @extend %reset;
+    line-height: 1em;
+    text-transform: uppercase;
+	}
+
+  h1 {
+    font-size: 5em;
+  }
+
+  h2 {
+    font-size: 3.5em;
+    letter-spacing: .3em;
+    color: lighten(#0099CC, 20%);
+  }
+}
+
+.location {
+  margin-left: 80px;
+  border-right: 4px solid #ccc;
+  display: inline-block;
+  padding-right: 80px;
+
+  img {
+    height: 160px;
+    width: auto;
+  }
+
+  address {
+    display: inline-block;
+    font-size: 2.5em;
+  }
+}
+
+.contact {
+  display: inline-block;
+  margin-left: 60px;
+
+  img {
+    height: 160px;
+    width: auto;
+  }
+
+  .phone {
+
+    a {
+      text-decoration: none;
+      color: #0099CC;
+      font-size: 3em;
+      font-style: italic;
+      position: relative;
+      bottom: 60px;
+    }
+  }
+}
+
+.textshadow .blur-effect {
+	-webkit-animation: blurout 3s ease-in; /* Safari 4+ */
+	   -moz-animation: blurout 3s ease-in; /* Fx 5+ */
+	     -o-animation: blurout 3s ease-in; /* Opera 12+ */
+	        animation: blurout 3s ease-in; /* IE 10+ */
+}
+
+@-webkit-keyframes blurout {
+  from {
+    color: transparent;
+    text-shadow: 0 0 10px rgba(0,153,204,0.5);
+  }
+
+  to {
+    text-shadow: 0;
+  }
+}
+@-moz-keyframes blurout {
+  from {
+    color: transparent;
+    text-shadow: 0 0 10px rgba(0,153,204,0.5);
+  }
+
+  to {
+    text-shadow: 0;
+  }
+}
+@-o-keyframes blurout {
+  from {
+    color: transparent;
+    text-shadow: 0 0 10px rgba(0,153,204,0.5);
+  }
+
+  to {
+    text-shadow: 0;
+  }
+}
+@keyframes blurout {
+  from {
+    color: transparent;
+    text-shadow: 0 0 10px rgba(0,153,204,0.5);
+  }
+
+  to {
+    text-shadow: 0;
+  }
+}

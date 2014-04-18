@@ -3,15 +3,15 @@
 <head>
 	<title>The best ophthalmology care for you and your family | Friendly Eye Medical Group</title>
 	<meta charset="utf-8">
-	<meta content="Friendly Eye Medical is dedicated to the best eye care for you and your family. Complete checkup and care for your eyes." name="description">
-	<meta content="eyes, eye doctor, doctor, pediatric, pediatric opthalmology, opthalmology, optometrist, eye checkup, eye care, contacts, retina, physician, la palma, california, southern california" name="keywords">
+	<meta content="Opthalmology and optometry care for kids and adults." name="description">
+	<meta content="eyes, eye doctor, doctor, pediatric, pediatric opthalmology, opthalmology, optometrist, eye checkup, eye care, contacts, retina, physician" name="keywords">
 	<meta name="viewport" content="width=device-width">
 
-	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-	<link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css' rel='stylesheet' />
-	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css">
 
 	<script>
+		// Google Analytics
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -19,48 +19,35 @@
 
 	  ga('create', 'UA-49479985-1', 'friendlyeyemedical.com');
 	  ga('send', 'pageview');
-
 	</script>
 </head>
-<body>
-	<div class="container main">
-		<div class="row">
-			<div class="col-sm-6">
-				<h1>Friendly Eye Medical</h1>
+<body itemscope itemtype="http://schema.org/MedicalOrganization">
 
-				<address>
-					5451 La Palma Ave.<br>
-					Suite 44<br>
-					La Palma CA 90623
-				</address>
+	<header role="banner">
+		<hgroup>
+			<h1 itemprop="name">Friendly Eye Medical</h1>
+			<h2><span class="blur-effect">See better</span></h2>
+		</hgroup>
+		<img src="assets/images/icon_14527.png">
+	</header>
 
-				<span class="accent">
-					<a href="#map">View map</a>
-				</span>
-
-				<p class="tel">Feel free to call <a href="tel:7145212290">714-521-2290</a></p>
-
-			</div>
-
-			<div class="col-sm-6 physician-main">
-				<img src="assets/physician.jpg" class="physician" height="800px" alt="Photo of Doctor Yadavinder Dang">
-				<aside class="accent description">
-					Dr. Dang has been practicting ophthalmology for the last 30 years, and has been specializing in both adult and child care.
-				</aside>
-			</div>
-		</div>
-	</div>
-
-	<section class="asset">
-		<img src="assets/office.jpg" alt="Photo of the four story office building">
-		<p class="accent building">
-			Friendly Eye Medical is located at the La Palma hospital, in the four story building. Suite 44 is located on the fourth floor.
-		</p>
+	<section itemscope itemtype="http://schema.org/Physician" class="location">
+		<img src="assets/images/icon_1832.png">
+		<address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+			<span itemprop="streetAddress">5451 La Palma Ave.<br> Suite 44</span><br>
+			<span itemprop="addressLocality">La Palma</span>,
+			<span itemprop="addressRegion">CA</span>
+			<span itemprop="postalCode">90623</span>
+		</address>
 	</section>
-	<section id="map"></section>
 
-	<script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.js'></script>
-	<script src="underscore.js"></script>
-	<script src="global.js"></script>
+	<section itemscope itemtype="http://schema.org/Physician" class="contact">
+		<img src="assets/images/icon_4886.png">
+		<span itemprop="telephone" class="phone">
+			<a href="tel:7145212290">714-521-2290</a>
+		</span>
+	</section>
+
+	<script type="text/javascript" src="assets/js/custom.js"></script>
 </body>
 </html>
