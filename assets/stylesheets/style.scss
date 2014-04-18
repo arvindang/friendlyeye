@@ -68,6 +68,18 @@ header {
   display: inline-block;
   padding-right: 80px;
 
+  a, a:hover, a:visited {
+    color: #0099CC;
+  }
+
+  // a:hover img {
+  //   -webkit-transform: translate(10px 10px);
+  //      -moz-transform: translate(10px 10px);
+  //       -ms-transform: translate(10px 10px);
+  //        -o-transform: translate(10px 10px);
+  //           transform: translate(10px 10px);
+  // }
+
   img {
     height: 160px;
     width: auto;
@@ -82,6 +94,10 @@ header {
 .contact {
   display: inline-block;
   margin-left: 60px;
+
+  a, a:hover, a:visited {
+    color: #0099CC;
+  }
 
   img {
     height: 160px;

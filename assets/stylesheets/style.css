@@ -455,6 +455,9 @@ header h2 {
   display: inline-block;
   padding-right: 80px;
 }
+.location a, .location a:hover, .location a:visited {
+  color: #0099CC;
+}
 .location img {
   height: 160px;
   width: auto;
@@ -467,6 +470,9 @@ header h2 {
 .contact {
   display: inline-block;
   margin-left: 60px;
+}
+.contact a, .contact a:hover, .contact a:visited {
+  color: #0099CC;
 }
 .contact img {
   height: 160px;
