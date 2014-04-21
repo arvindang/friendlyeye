@@ -405,6 +405,11 @@ header:after {
   clear: both;
 }
 
+header, .info {
+  width: 960px;
+  margin: 0 auto;
+}
+
 * {
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
@@ -423,25 +428,19 @@ body {
 header {
   padding: 40px;
 }
-header hgroup, header img {
-  float: left;
-}
-header hgroup {
-  margin-left: 80px;
-}
 header img {
-  height: 240px;
+  height: 200px;
   width: auto;
   position: relative;
-  top: -50px;
-  right: -40px;
+  top: 0;
+  right: 100px;
 }
 header h1, header h2 {
   line-height: 1em;
   text-transform: uppercase;
 }
 header h1 {
-  font-size: 5em;
+  font-size: 4em;
 }
 header h2 {
   font-size: 3.5em;
@@ -449,11 +448,13 @@ header h2 {
   color: #33ccff;
 }
 
+.info {
+  margin-top: 40px;
+}
+
 .location {
-  margin-left: 80px;
-  border-right: 4px solid #ccc;
   display: inline-block;
-  padding-right: 80px;
+  margin-bottom: 40px;
 }
 .location a, .location a:hover, .location a:visited {
   color: #0099CC;
@@ -469,7 +470,6 @@ header h2 {
 
 .contact {
   display: inline-block;
-  margin-left: 60px;
 }
 .contact a, .contact a:hover, .contact a:visited {
   color: #0099CC;

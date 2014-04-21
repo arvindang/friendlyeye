@@ -11,6 +11,11 @@
   clear: both;
 }
 
+%container {
+  width: 960px;
+  margin: 0 auto;
+}
+
 * {
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
@@ -28,21 +33,14 @@ header {
   // background-size: cover;
   padding: 40px;
   @extend %group;
-
-  hgroup, img {
-    float: left;
-  }
-
-  hgroup {
-    margin-left: 80px;
-  }
+  @extend %container;
 
   img {
-    height: 240px;
+    height: 200px;
     width: auto;
     position: relative;
-    top: -50px;
-    right: -40px;
+    top: 0;
+    right: 100px;
   }
 
   h1, h2 {
@@ -52,7 +50,7 @@ header {
 	}
 
   h1 {
-    font-size: 5em;
+    font-size: 4em;
   }
 
   h2 {
@@ -62,11 +60,15 @@ header {
   }
 }
 
+.info {
+  @extend %container;
+  margin-top: 40px;
+}
+
 .location {
-  margin-left: 80px;
-  border-right: 4px solid #ccc;
+  // border-right: 4px solid #ccc;
   display: inline-block;
-  padding-right: 80px;
+  margin-bottom: 40px;
 
   a, a:hover, a:visited {
     color: #0099CC;
@@ -93,7 +95,6 @@ header {
 
 .contact {
   display: inline-block;
-  margin-left: 60px;
 
   a, a:hover, a:visited {
     color: #0099CC;
